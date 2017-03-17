@@ -49,7 +49,7 @@ set $hlbg        #4CAF50
 
 
 #hide_edge_borders both
-new_window pixel 5
+new_window pixel 3
 
 font pango:DejaVu Sans Mono 8
 
