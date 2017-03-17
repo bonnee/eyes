@@ -1,0 +1,397 @@
+// vim:ts=4:sw=4:et
+{
+    // splith split container with 4 children
+    "border": "pixel 3",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.123/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.123\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.121/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.121\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.127/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.127\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "Session streamed with GStreamer - rtsp://one:one@192.168.1.25/axis-media/media.amp?videocodec=h264",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^Session\\ streamed\\ with\\ GStreamer\\ \\-\\ rtsp\\:\\/\\/one\\:one\\@192\\.168\\.1\\.25\\/axis\\-media\\/media\\.amp\\?videocodec\\=h264$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splith split container with 4 children
+    "border": "pixel 3",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.187/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.187\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.181/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.181\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.208/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.208\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.161/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.161\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splith split container with 4 children
+    "border": "pixel 3",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.125/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.125\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.120/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.120\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.126/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.126\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "Media Presentation - rtsp://one:oneoneone1@192.168.1.74/Streaming/Channels/102",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^Media\\ Presentation\\ \\-\\ rtsp\\:\\/\\/one\\:oneoneone1\\@192\\.168\\.1\\.74\\/Streaming\\/Channels\\/102$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splith split container with 4 children
+    "border": "pixel 3",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "RTSP server - rtsp://192.168.1.122/live2.sdp",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^RTSP\\ server\\ \\-\\ rtsp\\:\\/\\/192\\.168\\.1\\.122\\/live2\\.sdp$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "Media Presentation - rtsp://one:oneoneone1@192.168.1.64/Streaming/Channels/102",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^Media\\ Presentation\\ \\-\\ rtsp\\:\\/\\/one\\:oneoneone1\\@192\\.168\\.1\\.64\\/Streaming\\/Channels\\/102$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "Media Presentation - rtsp://one:oneoneone1@192.168.1.65/Streaming/Channels/102",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^Media\\ Presentation\\ \\-\\ rtsp\\:\\/\\/one\\:oneoneone1\\@192\\.168\\.1\\.65\\/Streaming\\/Channels\\/102$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel 3",
+            "current_border_width": 5,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 360,
+               "width": 640,
+               "x": 640,
+               "y": 360
+            },
+            "name": "Media Presentation - rtsp://one:oneoneone1@192.168.1.75/Streaming/Channels/102",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^ffplay$",
+               "instance": "^ffplay$",
+               "title": "^Media\\ Presentation\\ \\-\\ rtsp\\:\\/\\/one\\:oneoneone1\\@192\\.168\\.1\\.75\\/Streaming\\/Channels\\/102$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
