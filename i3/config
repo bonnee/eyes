@@ -11,7 +11,44 @@
 
 set $mod Mod4
 
-hide_edge_borders both
+set $grey        #9E9E9E
+set $black       #000000
+set $red         #F44336
+set $darkred     #B71C1C
+set $green       #4CAF50
+set $darkgreen   #1B5E20
+set $yellow      #FFEB3B
+set $darkyellow  #F57F17
+set $blue        #2196F3
+set $darkblue    #0D47A1
+set $magenta     #D500F9
+set $darkmagenta #AA00FF
+set $cyan        #00BCD4
+set $darkcyan    #006064
+set $white       #F6F6F6
+set $darkwhite   #E0E0E0
+set $transparent #000000FF
+
+# Dark foreground
+set $dfg         #AFB8C5
+
+# Dark background
+set $dbg         #000000
+
+# Light foreground
+set $lfg         #F6F6F6
+
+# Light background
+set $lbg         $green
+
+# Highlight foreground
+set $hlfg        #000000
+
+# Highlight background
+set $hlbg        #4CAF50
+
+
+#hide_edge_borders both
 new_window pixel 5
 
 font pango:DejaVu Sans Mono 8
@@ -91,6 +128,19 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+#################################################
+#####          Windows Preferences          #####
+#################################################
+
+# Window Colors
+# class                 border  backgr. text    indicator
+
+client.focused          $hlbg   $hlbg   $hldg   $green
+client.focused_inactive $dbg    $dbg    $dfg    $green
+client.unfocused        $dbg    $dbg    $dfg    $green
+client.urgent           $red    $red    $dfg    $green
+client.background       $dbg
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
