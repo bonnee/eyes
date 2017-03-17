@@ -1,0 +1,18 @@
+[
+    "192.168.1.120/live2.sdp",
+    "192.168.1.121/live2.sdp",
+    "192.168.1.122/live2.sdp",
+    "192.168.1.123/live2.sdp",
+    "192.168.1.125/live2.sdp",
+    "192.168.1.126/live2.sdp",
+    "192.168.1.127/live2.sdp",
+    "192.168.1.161/live2.sdp",
+    "192.168.1.181/live2.sdp",
+    "192.168.1.187/live2.sdp",
+    "192.168.1.208/live2.sdp",
+    "one:oneoneone1@192.168.1.64/Streaming/Channels/1?tcp",
+    "one:oneoneone1@192.168.1.65/Streaming/Channels/1?tcp",
+    "one:oneoneone1@192.168.1.74/Streaming/Channels/1?tcp",
+    "one:oneoneone1@192.168.1.75/Streaming/Channels/1?tcp",
+    "one:one@192.168.1.25/axis-media/media.amp?videocodec=h264&resolution=1360x768"
+]
