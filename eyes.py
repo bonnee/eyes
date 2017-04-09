@@ -1,31 +1,51 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 
 import os
+import sys
+import thread
 import time
 import json
-import i3ipc
 
-cmd = 'ffplay -fflags nobuffer -an -framedrop -loglevel error -fast -threads 2 -async 1 -preset ultrafast -tune zerolatency -vf scale=640:-1 '
-aft = ' &'
-#cmd='mplayer --nosound --dr --framedrop --nocache --quiet --fps=5 '
+def launch(addr):
+  #cmd='mplayer --nosound --dr --framedrop --nocache --quiet --fps=5 '
+  cmd = 'ffplay -fflags nobuffer -an -framedrop -loglevel error -fast -threads 2 -async 1 -preset ultrafast -tune zerolatency -vf scale=640:-1 '
+  os.system(cmd+addr)
 
-with open('streams.json') as data_file:    
-    streams = json.load(data_file)
+def start():
+  with open('streams.json') as data_file:
+      streams = json.load(data_file)
+  
+  print "Starting up streams. Don't change workspace until all streams appear."
+  time.sleep(8)
 
-os.system('i3-msg "workspace 1"')
-os.system('i3-msg "append_layout $HOME/eyes/layout.json"')
+  for stream in streams:
+    #launch(stream)
+    thread.start_new_thread(launch, (stream,))
+    time.sleep(2);
 
-for stream in streams:
-  os.system(cmd+stream+aft)
-  time.sleep(1.5);
+def full(mark):
+  return mark
 
+def mode(num):
+  with open('modes.json') as data_file:
+      modes = json.JSONDecoder().decode(data_file.read())
+  return num
 
-i3 = i3ipc.Connection()
+def halp():
+  print 'Help:\ncoming soon'
+  
+print 'eyes.py v0.01a\n'
 
-time.sleep(5)
+if len(sys.argv) > 1:
+  a = sys.argv[1]
 
-tree = i3.get_tree().leaves()
-for cam in tree:
-  if(cam.workspace().name == '1'):
-    print("Name: %s | Class: %s" % (cam.name, cam.window_class))
-
+  if a == 'start':
+    start()
+  elif a == 'mode':
+    mode(sys.argv[2])
+  elif a == 'full':
+    full(sys.argv[2])
+  else:
+    halp()
+else:
+  halp()
