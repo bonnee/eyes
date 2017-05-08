@@ -21,7 +21,7 @@ def start():
   for stream in streams:
     #launch(stream)
     thread.start_new_thread(launch, (stream,))
-    time.sleep(2.5);
+    time.sleep(8);
 
 def full(mark):
   return mark
